@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <script src="assets/js/jquery-1.11.1.min.js"></script>
+    <script src="assets/js/underscore.js"></script>
+    <script src="assets/js/McMug.js"></script>
+    <script src="assets/js/jquery.fjeport.js"></script>
+    <script src="assets/js/account.login.js"></script>
+</head>
+<body>
+    <div>
+        <form action="/account/dologin" pickqcallback="callback" mcmuglistener="listener" method="POST">
+                    <div class="formGroup form_2Col clearfix mT10">
+                        <div class="formLine">
+                            <label for="QuaNo">用户名</label>
+                            <input type="text" id="QuaNo" name="UserName" class="commonInput w260" tabindex="1" placeholder="" />
+                            <a href="javascript:void(0);" class="tipIcon">
+                                <span class="tipContent">请填写用户名</span>
+                                <span class="tipArrow"></span>
+                            </a>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="formLine">
+                            <label for="ReceivedName">密&emsp;码</label>
+                            <input type="password" id="ReceivedName" name="Password" class="commonInput w260" tabindex="2" placeholder="" />
+                            <a href="javascript:void(0);" class="tipIcon">
+                                <span class="tipContent">请填写密码</span>
+                                <span class="tipArrow"></span>
+                            </a>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="formLine">
+                            <input type="submit" class="ddBtn btnBlue" tabindex="3" value="登录"/>
+                            <input type="reset" class="ddBtn btnRed" value="取消"/>
+                        </div>
+                    </div>
+                    </form>
+    </div>
+</body>
+</html>
